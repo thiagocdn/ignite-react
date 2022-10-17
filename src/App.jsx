@@ -1,17 +1,20 @@
-import Post from "./Post";
+import { Post } from "./Post";
 
-function App() {
+export function App() {
   return (
     <div>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+    <Post
+      author="Thiago Cedran"
+      content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iure eaque natus, assumenda reiciendis ea quasi rem laboriosam nesciunt saepe, dicta alias voluptas! Molestias rerum quasi iure corrupti quo cum?"
+    />
+    <Post
+      author="Thiago Cedran"
+      content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iure eaque natus, assumenda reiciendis ea quasi rem laboriosam nesciunt saepe, dicta alias voluptas! Molestias rerum quasi iure corrupti quo cum?"
+    />
+    <Post
+      author="Thiago Cedran"
+      content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iure eaque natus, assumenda reiciendis ea quasi rem laboriosam nesciunt saepe, dicta alias voluptas! Molestias rerum quasi iure corrupti quo cum?"
+    />
     </div>
   )
 }
-
-export default App
