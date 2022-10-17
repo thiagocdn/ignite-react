@@ -1,6 +1,16 @@
+import Post from "./Post";
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <div>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+    </div>
   )
 }
 
