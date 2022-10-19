@@ -19,7 +19,12 @@ export function Post() {
                 <p>BLablablablablblablab</p>
                 <p>Outro paragrafo</p>
                 <p>Outro Novo paragrafinho muito lindo blablablablablbal</p>
-                <p><a href='#'>#blablabla</a></p>
+                <p>👍{' '}<a href="#">github.com/thiagocdn</a></p>
+                <p>
+                    <a href='#'>#blablabla</a>{' '}
+                    <a href='#'>#blablabla</a>{' '}
+                    <a href='#'>#blablabla</a>
+                </p>
             </div>
         </article>
     )
