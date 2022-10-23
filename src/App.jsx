@@ -10,7 +10,7 @@ const posts = [
   {
     id: 1,
     author: {
-      avatar: 'https://github.com/thiagocdn.png',
+      avatarUrl: 'https://github.com/thiagocdn.png',
       name: 'Thiago Cedran',
       role: 'Webdeveloper'
     },
@@ -37,9 +37,9 @@ const posts = [
   {
     id: 1,
     author: {
-      avatar: 'https://github.com/thiagocdn.png',
-      name: 'Thiago Cedran 02',
-      role: 'Senior Webdeveloper'
+      avatarUrl: 'https://github.com/maykbrito.png',
+      name: 'Maykabrito',
+      role: 'Developer'
     },
     content: [
       {
