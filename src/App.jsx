@@ -6,6 +6,63 @@ import styles from './App.module.css'
 
 import './global.css'
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatar: 'https://github.com/thiagocdn.png',
+      name: 'Thiago Cedran',
+      role: 'Webdeveloper'
+    },
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Olha esse texto muito bonito'
+      },
+      {
+        type: 'paragraph',
+        content: 'bonito bonito bonito'
+      },
+      {
+        type: 'paragraph',
+        content: 'mais bonito que ele é muito mais bonito que o bonito anterior!!'
+      },
+      {
+        type: 'link',
+        content: 'https://github.com/thiagocdn'
+      }
+    ],
+    publishedAt: new Date('2022-05-17 18:00:00')
+  },
+  {
+    id: 1,
+    author: {
+      avatar: 'https://github.com/thiagocdn.png',
+      name: 'Thiago Cedran 02',
+      role: 'Senior Webdeveloper'
+    },
+    content: [
+      {
+        type: 'paragraph',
+        content: 'Olha esse texto muito bonito 2'
+      },
+      {
+        type: 'paragraph',
+        content: 'bonito bonito bonito 2'
+      },
+      {
+        type: 'paragraph',
+        content: 'mais bonito que ele é muito mais bonito que o bonito anterior!! 2'
+      },
+      {
+        type: 'link',
+        content: 'https://github.com/thiagocdn'
+      }
+    ],
+    publishedAt: new Date('2022-05-17 18:00:00')
+  },
+]
+
 export function App() {
   return (
     <div>
@@ -14,18 +71,17 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Thiago Cedran"
-            content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iure eaque natus, assumenda reiciendis ea quasi rem laboriosam nesciunt saepe, dicta alias voluptas! Molestias rerum quasi iure corrupti quo cum?"
-          />
-          <Post
-            author="Thiago Cedran"
-            content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iure eaque natus, assumenda reiciendis ea quasi rem laboriosam nesciunt saepe, dicta alias voluptas! Molestias rerum quasi iure corrupti quo cum?"
-          />
-          <Post
-            author="Thiago Cedran"
-            content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi iure eaque natus, assumenda reiciendis ea quasi rem laboriosam nesciunt saepe, dicta alias voluptas! Molestias rerum quasi iure corrupti quo cum?"
-          />
+          {
+            posts.map(post => {
+              return (
+                <Post 
+                  author={post.author}
+                  content={post.content}
+                  publishedAt={post.publishedAt}
+                />
+              )
+          })
+          }
         </main>
       </div>
     </div>
